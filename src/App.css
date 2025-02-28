@@ -1,0 +1,157 @@
+body{
+  background-color: #212121 !important;
+  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important; */
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body{
+  font-family: 'Inter', sans-serif !important;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* App bar */
+.appbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.leftside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.rightside{
+  display: flex;
+  gap: 20px ;
+}
+
+/* home */
+
+.inputbox{
+  width: 730px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #303030 !important;
+  padding: 12px 10px;
+  border-radius: 20px;
+}
+.inputbtns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+.MuiMenu-list{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  background-color: #303030 !important;
+  border-radius: 20px !important;
+}
+.MuiPaper-root{
+  background-color: #303030 !important;
+  border-radius: 20px !important;
+}
+.dropmenus{
+  display: flex !important;
+  flex-direction: column;
+}
+.sidebarbox{
+  width: 17% !important;
+}
+.homecon{
+  width: 83% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mobileiconbox{
+  display: none !important;
+}
+.messagecontent{
+  padding-right: 170px !important;
+  }
+
+/* mobileResponsive */
+
+@media  (max-width:580px){
+  .sidebarbox{
+    display: none;
+  }
+  .signupbtn{
+    display: none !important; 
+  }
+  .mainheading{
+    font-size: 24px !important;
+    font-weight: 600;
+    line-height: 2.25rem;
+    margin-left: 0px !important;
+  }
+  .inputbox{
+    width: 300px !important;
+  }
+  .homecon{
+    width: 100% !important;
+  }
+  .inputbtns{
+    display: none !important;
+  }
+  .mobileiconbox{
+    display: flex !important;
+  }
+  .smmerbtn{
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .homepages{
+    height: 50vh !important;
+  }
+  .lasttext{
+    display: none !important;
+  }
+  .messageboxxx{
+    margin-left: 0px !important;
+    width: 98% !important;
+  }
+  .messagecontent{
+    padding-right: 20px !important;
+  }
+}  
+
