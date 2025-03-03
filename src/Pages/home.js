@@ -78,18 +78,21 @@ function Home() {
       </Box>
       <Box className="homecon">
         <Box className="messageboxxx" sx={{width:'83%',  marginLeft:'180px'}}>
+
           {/* Chat Box */}
+
           {messages.length > 0 && ( 
             <Box
             className='messagecontent'
               sx={{
-                height:'360px',
+                 height:'360px',
                 overflowY: "auto",
                 mb: 2,
                 p: 2,
                 borderRadius: 2,
                 display: "flex",
                 flexDirection: "column",
+                xs:{height:'440px'}
               }}
             >
               {messages.map((msg, index) => (
@@ -156,7 +159,7 @@ function Home() {
             <Box sx={{ display: "flex", gap: "10px" }}>
               <Button
                 sx={{
-                  padding: ".5rem .75rem",
+                  padding: ".5rem .75rem .4rem .75rem",
                   borderRadius: "25px",
                   gap: "5px",
                   fontFamily: "sans-serif",
@@ -169,12 +172,12 @@ function Home() {
                 }}
                 disableRipple
               >
-                <AddIcon style={{ fontSize: "18px" }} />
+                <AddIcon style={{ marginTop: '-4px', fontSize: "18px" }} />
                 Attach
               </Button>
               <Button
                 sx={{
-                  padding: ".5rem .75rem",
+                  padding: ".5rem .75rem .4rem .75rem",
                   borderRadius: "25px",
                   gap: "5px",
                   fontFamily: "sans-serif",
@@ -187,11 +190,11 @@ function Home() {
                 }}
                 disableRipple
               >
-                <LanguageIcon style={{ fontSize: "18px" }} /> Sreach{" "}
+                <LanguageIcon style={{ marginTop: '-4px',fontSize: "18px" }} /> Sreach{" "}
               </Button>
               <Button
                 sx={{
-                  padding: ".5rem .75rem",
+                  padding: ".5rem .75rem .4rem .75rem",
                   borderRadius: "25px",
                   gap: "5px",
                   fontFamily: "sans-serif",
@@ -204,14 +207,14 @@ function Home() {
                 }}
                 disableRipple
               >
-                <LightbulbIcon style={{ fontSize: "18px" }} /> Reason
+                <LightbulbIcon style={{ marginTop: '-4px',fontSize: "18px" }} /> Reason
               </Button>
             </Box>
             <Box>
               <Button
                 onClick={sendMessage}
                 sx={{
-                  padding: ".5rem .75rem",
+                  padding: ".5rem .75rem .4rem .75rem",
                   borderRadius: "25px",
                   gap: "5px",
                   fontFamily: "sans-serif",

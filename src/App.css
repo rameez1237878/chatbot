@@ -46,6 +46,7 @@ body{
 
 
 /* App bar */
+
 .appbar{
   display: flex;
   justify-content: space-between;
@@ -125,7 +126,7 @@ body{
     margin-left: 0px !important;
   }
   .inputbox{
-    width: 300px !important;
+    width: 370px ;
   }
   .homecon{
     width: 100% !important;
@@ -141,7 +142,7 @@ body{
     justify-content: center !important;
   }
   .homepages{
-    height: 50vh !important;
+    height: 60vh !important;
   }
   .lasttext{
     display: none !important;
@@ -152,6 +153,8 @@ body{
   }
   .messagecontent{
     padding-right: 20px !important;
+    height: 500px !important;
+    margin-top: 50px;
   }
 }  
 
