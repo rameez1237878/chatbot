@@ -152,6 +152,7 @@ body{
   .messageboxxx{
     margin-left: 0px !important;
     width: 98% !important;
+      margin-top: 50px;
   }
   .messagecontent{
     padding-right: 20px !important;
