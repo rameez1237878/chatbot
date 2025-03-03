@@ -126,7 +126,7 @@ body{
     margin-left: 0px !important;
   }
   .inputbox{
-    width: 370px ;
+    width: 340px ;
   }
   .homecon{
     width: 100% !important;
@@ -140,6 +140,8 @@ body{
   .smmerbtn{
     flex-wrap: wrap !important;
     justify-content: center !important;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .homepages{
     height: 60vh !important;

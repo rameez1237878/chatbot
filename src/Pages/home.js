@@ -207,7 +207,7 @@ function Home() {
                 }}
                 disableRipple
               >
-                <LightbulbIcon style={{ marginTop: '-4px',fontSize: "18px" }} /> Reason
+                <LightbulbIcon style={{marginTop: '-4px',fontSize: "18px" }} /> Reason
               </Button>
             </Box>
             <Box>
@@ -261,7 +261,6 @@ function Home() {
                   "&:hover": { backgroundColor: "rgba(255, 255, 255, 0.2)" },
                 }}
               >
-                {" "}
                 <AddIcon sx={{ color: "white" }} />
               </Box>
               <Box
@@ -277,7 +276,6 @@ function Home() {
                   "&:hover": { backgroundColor: "rgba(255, 255, 255, 0.2)" },
                 }}
               >
-                {" "}
                 <LanguageIcon sx={{ color: "white" }} />
               </Box>
               <Box
@@ -293,8 +291,7 @@ function Home() {
                   "&:hover": { backgroundColor: "rgba(255, 255, 255, 0.2)" },
                 }}
               >
-                {" "}
-                <LightbulbIcon sx={{ color: "white" }} />
+                <LightbulbIcon sx={{color: "white" }} />
               </Box>
             </Box>
             <Box>
@@ -313,7 +310,6 @@ function Home() {
                   "&:hover": { backgroundColor: " rgb(236 236 236 )" },
                 }}
               >
-                {" "}
                 <SendIcon sx={{ color: "black" }} />
               </Box>
             </Box>
@@ -333,7 +329,7 @@ function Home() {
           >
             <Button
               sx={{
-                padding: ".5rem .75rem",
+                padding: ".5rem .75rem .4rem .75rem",
                 borderRadius: "25px",
                 gap: "5px",
                 fontSize: "13px",
@@ -347,13 +343,13 @@ function Home() {
               disableRipple
             >
               <LightbulbIcon
-                style={{ fontSize: "18px", color: "rgb(226, 197, 65)" }}
-              />{" "}
-              Brianstorm{" "}
+                style={{ marginTop:'-4px', fontSize: "18px", color: "rgb(226, 197, 65)" }}
+              />
+              Brianstorm
             </Button>
             <Button
               sx={{
-                padding: ".5rem .75rem",
+                padding: ".5rem .75rem .4rem .75rem",
                 borderRadius: "25px",
                 gap: "5px",
                 fontSize: "13px",
@@ -367,13 +363,13 @@ function Home() {
               disableRipple
             >
               <DescriptionIcon
-                style={{ fontSize: "18px", color: "rgb(234, 132, 68)" }}
+                style={{ marginTop:'-4px',fontSize: "18px", color: "rgb(234, 132, 68)" }}
               />
               Summarize text
             </Button>
             <Button
               sx={{
-                padding: ".5rem .75rem",
+                padding: ".5rem .75rem .4rem .75rem",
                 borderRadius: "25px",
                 gap: "5px",
                 fontFamily: "sans-serif",
@@ -387,13 +383,13 @@ function Home() {
               disableRipple
             >
               <VisibilityIcon
-                style={{ fontSize: "18px", color: "rgb(108, 113, 255)" }}
-              />{" "}
-              Analyze images{" "}
+                style={{ marginTop:'-4px',fontSize: "18px", color: "rgb(108, 113, 255)" }}
+              />
+              Analyze images
             </Button>
             <Button
               sx={{
-                padding: ".5rem .75rem",
+                padding: ".5rem .75rem .4rem .75rem",
                 borderRadius: "25px",
                 gap: "5px",
                 fontFamily: "sans-serif",
@@ -407,13 +403,13 @@ function Home() {
               disableRipple
             >
               <SchoolIcon
-                style={{ fontSize: "18px", color: "rgb(118, 208, 235)" }}
-              />{" "}
-              Get advice{" "}
+                style={{ marginTop:'-4px',fontSize: "18px", color: "rgb(118, 208, 235)" }}
+              />
+              Get advice
             </Button>
             <Button
               sx={{
-                padding: ".5rem .75rem",
+                padding: ".5rem .75rem .4rem .75rem",
                 borderRadius: "25px",
                 gap: "5px",
                 fontFamily: "sans-serif",
@@ -427,8 +423,8 @@ function Home() {
               disableRipple
             >
               <TerminalIcon
-                style={{ fontSize: "18px", color: "rgb(108, 113, 255)" }}
-              />{" "}
+                style={{ marginTop:'-4px',fontSize: "18px", color: "rgb(108, 113, 255)" }}
+              />
               Code
             </Button>
             <Button
@@ -446,7 +442,7 @@ function Home() {
               }}
               disableRipple
             >
-              More{" "}
+              More
             </Button>
           </Box>
         )}
