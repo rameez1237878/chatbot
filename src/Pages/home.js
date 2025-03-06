@@ -34,8 +34,8 @@ function Home() {
           messages: [
             {
               role: "system",
-              content:
-                "You are a helpful AI assistant that only answers health-related questions. If a user asks something unrelated to health, politely inform them that you can only provide health-related information.",
+              content:"You are a helpful AI assistant specializing in health-related topics. You can analyze provided patient details to identify possible diseases,gender, history of smoking and suggest relevant solutions and medication, exercises based on symptoms, medical history, and other given information. If a user asks something unrelated to health, politely inform them that you can only provide health-related information.",
+                // "You are a helpful AI assistant that only answers health-related questions. If a user asks something unrelated to health, politely inform them that you can only provide health-related information. and Find patients with a history of heart disease.",
             },
             { role: "user", content: input },
           ],
@@ -85,14 +85,13 @@ function Home() {
             <Box
             className='messagecontent'
               sx={{
-                 height:'360px',
+                 height:'350px',
                 overflowY: "auto",
                 mb: 2,
                 p: 2,
                 borderRadius: 2,
                 display: "flex",
                 flexDirection: "column",
-                xs:{height:'440px'}
               }}
             >
               {messages.map((msg, index) => (
@@ -107,7 +106,7 @@ function Home() {
                     backgroundColor:
                       msg.sender === "user" ? "#e3f2fd" : "#c8e6c9",
                     borderRadius: "10px",
-                    textAlign: msg.sender === "user" ? "right" : "left", 
+                    textAlign: msg.sender? "left" : "right" , 
                   }}
                 >
                   <Typography variant="body1" sx={{ color: "white" }}>
@@ -134,27 +133,29 @@ function Home() {
           )}
          </Box>
          <Box className="inputbox">
-          <input
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                sendMessage();
-              }
-            }}
-            value={input}
-            type="text"
-            placeholder="Message ChatGPT"
-            style={{
-              width: "100%",
-              padding: "10px 0px",
-              fontFamily: "sans-serif",
-              backgroundColor: "transparent",
-              border: "none",
-              outline: "none",
-              color: "white",
-              fontSize: "1rem",
-            }}
-          />
+         <textarea
+        onChange={(e) => setInput(e.target.value)}
+        onKeyDown={(e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+         e.preventDefault(); 
+        sendMessage();
+        }
+       }}
+      value={input}
+      placeholder="Message ChatGPT"
+      style={{
+       width: "95%",
+       padding: "10px",
+       fontFamily: "sans-serif",
+       backgroundColor: "transparent",
+       border: "none",
+       outline: "none",
+       color: "white",
+       fontSize: "1rem",
+        overflow: "hidden",
+         }}
+         rows={1}
+    />
           <Box className="inputbtns">
             <Box sx={{ display: "flex", gap: "10px" }}>
               <Button
@@ -190,7 +191,7 @@ function Home() {
                 }}
                 disableRipple
               >
-                <LanguageIcon style={{ marginTop: '-4px',fontSize: "18px" }} /> Sreach{" "}
+                <LanguageIcon style={{ marginTop: '-4px',fontSize: "18px" }} /> Sreach
               </Button>
               <Button
                 sx={{

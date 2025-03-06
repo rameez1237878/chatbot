@@ -45,6 +45,7 @@ const StyledMenu = styled((props) => (
     ...theme.applyStyles('dark', {
       color: theme.palette.grey[300],
     }),
+    
   },
 }));
 
